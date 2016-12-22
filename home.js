@@ -64,6 +64,7 @@ export default class HomeScene extends Component {
         user: this.props.user
       };
   }
+  
   componentDidMount() {
     Alert.alert("Welcome, " + this.props.user.first_name + "!");
   }
@@ -71,6 +72,7 @@ export default class HomeScene extends Component {
   render() {
     return (
       <View style={styles.main}>
+        <Text>{this.state.user.first_name}</Text>
         <ListView
           dataSource={this.state.dataSource}
           renderRow={() => <Text>TODO: Render Venue</Text>}/>
