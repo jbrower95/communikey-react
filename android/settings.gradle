@@ -1,0 +1,3 @@
+rootProject.name = 'communikeyreact'
+
+include ':app'
